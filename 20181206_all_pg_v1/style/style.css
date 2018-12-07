@@ -1,0 +1,77 @@
+html, body {
+  font-family: 'foundersGroteskSemi', sans-serif;
+  /* padding: 40px; */
+  margin: 0;
+  background-color: white;
+}
+
+canvas {
+  display: block;
+}
+
+.nav {
+  padding-top: 150px;
+  padding-left: 150px;
+  margin: 150px;
+  display: block;
+}
+
+.maintext {
+  position: relative;
+  display: inline-block;
+  color: white;
+  font-size: 48px;
+  font-family: 'foundersGroteskSemi', sans-serif;
+  line-height: 1.15;
+  letter-spacing: 1px;
+}
+
+.secondarytext {
+  position: relative;
+  display: inline-block;
+  color: white;
+  font-size: 21px;
+  font-family: 'basisGrotesqueMono', monospace;
+  letter-spacing: 1px;
+}
+
+.hr{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.reasontext {
+  position: relative;
+  display: inline-block;
+  color: white;
+  font-size: 48px;
+  font-family: 'foundersGroteskSemi', sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 1.25;
+}
+
+
+.explanationtext{
+  position: relative;
+  display: inline-block;
+  /* float:right; */
+  /* width: 600px; */
+  color: white;
+  font-size: 21px;
+  font-family: 'basisGrotesqueMono', sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+#downArrow {
+  display: inline-block;
+  padding-left: 25px;
+}
+
+#challenges {
+  padding-top: 100px;
+}
+
+/* #Reason {
+  display: inline;
+} */
