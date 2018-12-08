@@ -13,14 +13,16 @@ function setup() {
   serial.on('close', portClose);      // callback for the port closing
   serial.open(portName);              // open a serial port
 
-  createCanvas(500,500);
-  background(255,255,0);
+  createCanvas(1024,728);
+  background(11,87,255);
+  h1 = createElement('h1','Voltage Generated from Solar Cell')
 }
 
 function draw() {
   // fill(255);
   // textSize(60);
   // text("sensor value: " + inData, 20,100);
+  h1.position(40,20);
   graphData(inData);
 }
 
@@ -59,7 +61,7 @@ function graphData(newData) {
 
   ////////////////DRAW LINE/////////////////
   // draw the line in a pretty color:
-  stroke(0, 100, 255);
+  stroke(255,255, 0);
   strokeWeight(5);
   strokeCap(SQUARE);
   line(xPos, height, xPos, height - yPos);
@@ -74,7 +76,7 @@ function graphData(newData) {
   if (xPos >= width) {
     xPos = 0;
     // clear the screen by resetting the background:
-    background(255, 255, 0);
+    background(11,87, 255);
   } else {
     // increment the horizontal position for the next reading:
     xPos= xPos + 2;

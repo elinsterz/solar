@@ -53,7 +53,9 @@ function setup() {
   sun = new Sun(0, 0);
 
   slider = createSlider(1, 13, 3);
-  slider.position(250, 50);
+  slider.position(700, 50);
+
+  h1 = createElement('h1','Solar Cell Diagram');
 }
 
 function centerCanvas() {
@@ -66,8 +68,10 @@ function windowResized() {
   centerCanvas();
 }
 
+
 function draw() {
   background(255,255, 0);
+  h1.position(40,20);
   let sliderPhoton = slider.value();
   cell.show();
 

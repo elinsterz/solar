@@ -1,7 +1,18 @@
 html, body {
+  font-family: 'foundersGroteskSemi', sans-serif;
+  padding: 40;
   margin: 0;
-  padding: 0;
+  font-size: 21px;
+  background-color: #0B57FF;
 }
+
 canvas {
   display: block;
+}
+
+h1{
+  color: black;
+  font-size: 48px;
+  font-family: 'foundersGroteskSemi', sans-serif;
+  line-height: 1.15;
 }
