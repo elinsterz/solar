@@ -27,7 +27,7 @@ function draw() {
 // get the list of ports:
 function printList(portList) {
  // portList is an array of serial port names
- for ( i = 0; i < portList.length; i++) {
+ for (let i = 0; i < portList.length; i++) {
  // Display the list the console:
  print(i + " " + portList[i]);
  }
