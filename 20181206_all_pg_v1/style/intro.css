@@ -8,21 +8,29 @@ canvas {
   display: block;
 }
 
-#headline {
-  padding: 100px;
+#intro {
+  padding-top: 20px;
   position: relative;
   display: inline-block;
   color: black;
   text-align: center;
-  font-size: 40px;
+  font-size:36px;
   font-family: 'foundersGroteskSemi', sans-serif;
   line-height: 1.15;
 }
 
-#house{
-  display: block;
-  position: absolute;
+#headline{
+  position:relative;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
+
+/* #house{ */
+  /* display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: 5px; */
+  /* width: 50%; */
+/* } */

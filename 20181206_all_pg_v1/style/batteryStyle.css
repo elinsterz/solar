@@ -24,6 +24,7 @@ canvas {
   font-family: 'foundersGroteskSemi', sans-serif;
   line-height: 1.15;
   letter-spacing: 1px;
+  padding-top: 40px;
 }
 
 .secondarytext {
@@ -33,11 +34,25 @@ canvas {
   font-size: 21px;
   font-family: 'basisGrotesqueMono', monospace;
   letter-spacing: 1px;
+  padding-top: 40px;
 }
 
-.hr{
-  padding-top: 20px;
-  padding-bottom: 20px;
+a{
+  padding-top: 25px;
+  color: white;
+  font-family: 'basisGrotesqueMono', monospace;
+  text-decoration: none;
+}
+
+#readmore{
+  color: white;
+  font-size: 21px;
+  font-family: 'basisGrotesqueMono', sans-serif;
+}
+
+.hr {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .reasontext {
@@ -50,8 +65,7 @@ canvas {
   line-height: 1.25;
 }
 
-
-.explanationtext{
+.explanationtext {
   position: relative;
   display: inline-block;
   /* float:right; */
@@ -63,15 +77,8 @@ canvas {
   line-height: 1.5;
 }
 
+
 #downArrow {
   display: inline-block;
   padding-left: 25px;
 }
-
-#challenges {
-  padding-top: 100px;
-}
-
-/* #Reason {
-  display: inline;
-} */
