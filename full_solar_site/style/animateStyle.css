@@ -1,0 +1,15 @@
+html, body {
+  font-family: arial;
+  padding: 100px;
+}
+
+canvas {
+  display: block;
+}
+
+.nav {
+  padding-top: 150px;
+  padding-left: 150px;
+  margin: 150px;
+  display: block;
+}
