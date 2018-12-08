@@ -27,7 +27,7 @@ function draw() {
 // get the list of ports:
 function printList(portList) {
  // portList is an array of serial port names
- for (var i = 0; i < portList.length; i++) {
+ for ( i = 0; i < portList.length; i++) {
  // Display the list the console:
  print(i + " " + portList[i]);
  }
@@ -55,7 +55,7 @@ function portClose() {
 
 function graphData(newData) {
   // map the range of the input to the window height:
-  var yPos = map(newData, 120, 255, 0, height);
+  let yPos = map(newData, 120, 255, 0, height);
   // draw the line in a pretty color:
   stroke(0, 100, 255);
   strokeWeight(5);
