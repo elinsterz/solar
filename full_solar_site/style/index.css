@@ -26,11 +26,14 @@ canvas {
   width: 50%;
 }
 
-/* #house{ */
-  /* display: block;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  /* padding: 5px; */
-  /* width: 50%; */
-/* } */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav {
+  display: inline;
+  display: block;
+  float: left;
+}
