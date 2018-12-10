@@ -1,7 +1,5 @@
 let cnv;
 let canvas;
-let serial;
-let portName = '/dev/cu.usbmodem1411';
 
 //for serial communication
 let button1;
@@ -42,10 +40,6 @@ function windowResized() {
 
 
 function draw() {
-  fill(0);
-  strokeWeight(2.5);
-  line(0,795, width,795);
-
   ////////// controlling pages with switches /////////////
   console.log("button 1:", button1);
   console.log("button 2:",button2);
