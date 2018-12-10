@@ -9,6 +9,8 @@ let button2;
 let button3;
 let button4;
 let rightBar;
+let leftBar;
+let solarRead;
 
 function setup() {
   serial = new p5.SerialPort();
@@ -27,7 +29,7 @@ function setup() {
 
 function draw() {
   h1.position(40, 20);
-  // graphData(inData);
+  graphData(solarRead);
 
   ////////// controlling pages with switches /////////////
   console.log("button 1:", button1);
@@ -50,6 +52,9 @@ function draw() {
   if (rightBar == 1) {
     window.location.href = "battery.html";
   }
+  // if (leftBar == 1) {
+  //   window.location.href = "../index.html";
+  // }
 }
 
 // get the list of ports:
@@ -82,6 +87,9 @@ function serialEvent() {
     button2 = sensors[1];
     button3 = sensors[2];
     button4 = sensors[3];
+    leftBar = sensors[4];
+    rightBar = sensors[5];
+    solarRead = sensors[6];
     // rightBar = sensors[4]; //be sure to write the code in Arduino
   }
 }
@@ -96,7 +104,7 @@ function portClose() {
 
 function graphData(newData) {
   // map the range of the input to the window height:
-  var yPos = map(newData, 120, 255, 0, height);
+  var yPos = map(newData, 50, 255, 0, height);
 
   ////////////////DRAW LINE/////////////////
   // draw the line in a pretty color:

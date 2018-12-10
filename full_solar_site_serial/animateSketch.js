@@ -26,6 +26,8 @@ let button2;
 let button3;
 let button4;
 let rightBar;
+let leftBar;
+let solarRead;
 
 function setup() {
   /////////////////serial communication code/////////////////////
@@ -74,8 +76,8 @@ function setup() {
   cell = new Cell(0, 0);
   sun = new Sun(0, 0);
 
-  slider = createSlider(1, 13, 3);
-  slider.position(700, 50);
+  // slider = createSlider(1, 13, 3);
+  // slider.position(700, 50);
 
   h1 = createElement('h1', 'Solar Cell Diagram');
 }
@@ -94,17 +96,19 @@ function windowResized() {
 function draw() {
   background(255, 255, 0);
   h1.position(40, 20);
-  let sliderPhoton = slider.value();
+  // let sliderPhoton = slider.value();
+  let sliderPhoton = map(solarRead,60,255,1,13);
   cell.show();
 
   // This is the function that goes through the whole loop of photon, e-h gen, tweening and circuit
 
-  if (millis() - loopTimer > 10000) {
+  if (millis() - loopTimer > 7000) {
     loopTimer = millis()
 
     for (let l = 0; l < sliderPhoton; l++) {
-      let rndPh = floor(random(13));
-      photons.push(new Loop(phStopX[rndPh], phStopY[rndPh], phStartX, phStartY[rndPh]));
+      // let rndPh = floor(random(13));
+      // photons.push(new Loop(phStopX[rndPh], phStopY[rndPh], phStartX, phStartY[rndPh]));
+      photons.push(new Loop(phStopX[l], phStopY[l], phStartX, phStartY[l]));
     }
   }
   for (num of photons) {
@@ -175,6 +179,9 @@ function serialEvent() {
     button2 = sensors[1];
     button3 = sensors[2];
     button4 = sensors[3];
+    leftBar = sensors[4];
+    rightBar = sensors[5];
+    solarRead = sensors[6];
     // rightBar = sensors[4]; //be sure to write the code in Arduino
   }
 }

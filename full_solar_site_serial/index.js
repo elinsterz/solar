@@ -11,6 +11,7 @@ let button2;
 let button3;
 let button4;
 let rightBar;
+let leftBar;
 
 function centerCanvas() {
   let x = (windowWidth - width) / 2;
@@ -107,6 +108,8 @@ function serialEvent() {
     button2 = sensors[1];
     button3 = sensors[2];
     button4 = sensors[3];
+    leftBar = sensors[4];
+    rightBar = sensors[5];
     // rightBar = sensors[4]; //be sure to write the code in Arduino
   }
 }
