@@ -31,7 +31,7 @@ let solarRead;
 
 function setup() {
   /////////////////serial communication code/////////////////////
-  serial = new p5.SerialPort();
+  serial = new p5.SerialPort("10.17.61.21");
   serial.on('list', printList);
   serial.on('connected', serverConnected); // callback for connecting to the server
   serial.on('open', portOpen); // callback for the port opening
