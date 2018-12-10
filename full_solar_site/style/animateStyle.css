@@ -3,7 +3,7 @@ html, body {
   padding: 40;
   margin: 0;
   font-size: 21px;
-  /* background-color: #FFFF00; */
+  background-color: #FFFF00;
 }
 
 canvas {

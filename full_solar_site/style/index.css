@@ -33,7 +33,6 @@ ul {
 }
 
 #nav {
-  display: inline;
-  display: block;
+  display: inline-block;
   float: left;
 }

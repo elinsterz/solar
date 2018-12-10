@@ -9,7 +9,7 @@ function centerCanvas() {
 
 function setup() {
   cnv = createCanvas(1024, 768);
-  canvas.position(50,100);
+  cnv.position(50,100);
   centerCanvas();
   clear();
 }
