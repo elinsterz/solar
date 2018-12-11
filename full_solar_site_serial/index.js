@@ -49,11 +49,11 @@ function draw() {
   strokeWeight(2.5);
   line(0,795, width,795);
 
-  ////////// controlling pages with switches /////////////
-  // console.log("button 1:", button1);
-  // console.log("button 2:",button2);
-  // console.log("button 3:",button3);
-  // console.log("button 4:",button4);
+  //////// controlling pages with switches /////////////
+  console.log("button 1:", button1);
+  console.log("button 2:",button2);
+  console.log("button 3:",button3);
+  console.log("button 4:",button4);
 
   if (button1 == 1) {
     window.location.href="index.html";
