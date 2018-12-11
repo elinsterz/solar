@@ -11,6 +11,7 @@ let button2;
 let button3;
 let button4;
 let rightBar;
+let leftBar;
 
 function centerCanvas() {
   let x = (windowWidth - width) / 2;
