@@ -23,7 +23,8 @@ function setup() {
   serial.open(portName); // open a serial port
 
   createCanvas(1024, 728);
-  background(11, 87, 255);
+  // background(11, 87, 255);
+  background(53, 138, 255);
   h1 = createElement('h1', 'Voltage Generated from Solar Cell')
 }
 
@@ -123,7 +124,8 @@ function graphData(newData) {
   if (xPos >= width) {
     xPos = 0;
     // clear the screen by resetting the background:
-    background(11, 87, 255);
+    // background(11, 87, 255);
+    background(53, 138, 255);
   } else {
     // increment the horizontal position for the next reading:
     xPos = xPos + 2;
