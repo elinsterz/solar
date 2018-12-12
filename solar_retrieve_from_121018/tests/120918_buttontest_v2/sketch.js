@@ -1,33 +1,13 @@
-let cnv;
-let canvas;
-
-//for serial communication
 let serial;
 let portName = '/dev/cu.usbmodem1411';
-
-//for button switches
 let button1;
 let button2;
 let button3;
 let button4;
-let rightBar;
-let leftBar;
-let solarRead;
 
-function centerCanvas() {
-  let x = (windowWidth - width) / 2;
-  let y = (windowHeight - height) / 2;
-  cnv.position(x, y);
-}
 
 function setup() {
-  cnv = createCanvas(1024, 768);
-  cnv.position(50,100);
-  centerCanvas();
-  clear();
-
-  // serial communictaion codes
-  serial = new p5.SerialPort("10.17.61.21");
+  serial = new p5.SerialPort();
   serial.on('list', printList);
   serial.on('connected', serverConnected); // callback for connecting to the server
   serial.on('open', portOpen); // callback for the port opening
@@ -38,42 +18,18 @@ function setup() {
   serial.open(portName); // open a serial port
 
   serial.list();
-}
 
-function windowResized() {
-  centerCanvas();
-}
+  createCanvas(500, 500);
+  background(255, 255, 0);
 
+}
 
 function draw() {
-  fill(0);
-  strokeWeight(2.5);
-  line(0,795, width,795);
-
-  //////// controlling pages with switches /////////////
+  background(0); // black background
   console.log("button 1:", button1);
   console.log("button 2:",button2);
   console.log("button 3:",button3);
   console.log("button 4:",button4);
-
-  if (button1 == 1) {
-    window.location.href = "index.html";
-  }
-  if (button2 == 1) {
-    window.location.href = "/view/animate.html";
-  }
-  if (button3 == 1) {
-    window.location.href = "/view/voltGen.html";
-  }
-  if (button4 == 1) {
-    window.location.href = "/view/battery2.html";
-  }
-  if (rightBar == 1) {
-    window.location.href = "/view/battery.html";
-  }
-  if (leftBar == 1) {
-    window.location.href = "index.html";
-  }
 }
 
 // get the list of ports:
@@ -106,15 +62,13 @@ function serialEvent() {
   // inData = Number(serial.read());
   let inString = serial.readStringUntil('\r\n');
 
+
   if (inString.length > 0) {
     let sensors = split(inString, ','); // split the string on the commas
     button1 = sensors[0];
     button2 = sensors[1];
     button3 = sensors[2];
     button4 = sensors[3];
-    rightBar = sensors[4];
-    leftBar = sensors[5];
-    solarRead = sensors[6];
-    // rightBar = sensors[4]; //be sure to write the code in Arduino
+    // button1 = map(sensors[0], 0, 410, 0,width);
   }
 }

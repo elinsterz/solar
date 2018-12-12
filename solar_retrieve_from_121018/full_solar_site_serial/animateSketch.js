@@ -127,22 +127,19 @@ function draw() {
   // console.log("button 4:", button4);
 
   if (button1 == 1) {
-    window.location.href = "index.html";
+    window.location.href = "../index.html";
   }
   if (button2 == 1) {
-    window.location.href = "/view/animate.html";
+    window.location.href = "animate.html";
   }
   if (button3 == 1) {
-    window.location.href = "/view/voltGen.html";
+    window.location.href = "voltGen.html";
   }
   if (button4 == 1) {
-    window.location.href = "/view/battery2.html";
+    window.location.href = "battery2.html";
   }
   if (rightBar == 1) {
-    window.location.href = "/view/battery.html";
-  }
-  if (leftBar == 1) {
-    window.location.href = "index.html";
+    window.location.href = "battery.html";
   }
 }
 
@@ -182,8 +179,8 @@ function serialEvent() {
     button2 = sensors[1];
     button3 = sensors[2];
     button4 = sensors[3];
-    rightBar = sensors[4];
-    leftBar = sensors[5];
+    leftBar = sensors[4];
+    rightBar = sensors[5];
     solarRead = sensors[6];
     // rightBar = sensors[4]; //be sure to write the code in Arduino
   }

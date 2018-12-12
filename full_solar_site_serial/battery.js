@@ -46,26 +46,29 @@ function windowResized() {
 
 
 function draw() {
-  ////////// controlling pages with switches /////////////
-  // console.log("button 1:", button1);
-  // console.log("button 2:",button2);
-  // console.log("button 3:",button3);
-  // console.log("button 4:",button4);
+  //////// controlling pages with switches /////////////
+  console.log("button 1:", button1);
+  console.log("button 2:",button2);
+  console.log("button 3:",button3);
+  console.log("button 4:",button4);
 
   if (button1 == 1) {
-    window.location.href="../index.html";
+    window.location.href = "index.html";
   }
   if (button2 == 1) {
-    window.location.href="animate.html";
+    window.location.href = "/view/animate.html";
   }
   if (button3 == 1) {
-    window.location.href="voltGen.html";
+    window.location.href = "/view/voltGen.html";
   }
   if (button4 == 1) {
-    window.location.href="battery2.html";
+    window.location.href = "/view/battery2.html";
   }
   if (rightBar == 1) {
-    window.location.href="battery.html";
+    window.location.href = "/view/battery.html";
+  }
+  if (leftBar == 1) {
+    window.location.href = "index.html";
   }
 }
 
@@ -99,16 +102,15 @@ function serialEvent() {
   // inData = Number(serial.read());
   let inString = serial.readStringUntil('\r\n');
 
-
-    if (inString.length > 0) {
-      let sensors = split(inString, ','); // split the string on the commas
-      button1 = sensors[0];
-      button2 = sensors[1];
-      button3 = sensors[2];
-      button4 = sensors[3];
-      leftBar = sensors[4];
-      rightBar = sensors[5];
-      solarRead = sensors[6];
-      // rightBar = sensors[4]; //be sure to write the code in Arduino
-    }
+  if (inString.length > 0) {
+    let sensors = split(inString, ','); // split the string on the commas
+    button1 = sensors[0];
+    button2 = sensors[1];
+    button3 = sensors[2];
+    button4 = sensors[3];
+    rightBar = sensors[4];
+    leftBar = sensors[5];
+    solarRead = sensors[6];
+    // rightBar = sensors[4]; //be sure to write the code in Arduino
+  }
 }

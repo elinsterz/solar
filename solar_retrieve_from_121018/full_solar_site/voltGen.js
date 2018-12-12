@@ -9,11 +9,9 @@ let button2;
 let button3;
 let button4;
 let rightBar;
-let leftBar;
-let solarRead;
 
 function setup() {
-  serial = new p5.SerialPort("10.17.61.21");
+  serial = new p5.SerialPort();
   serial.on('list', printList);
   serial.on('connected', serverConnected); // callback for connecting to the server
   serial.on('open', portOpen); // callback for the port opening
@@ -23,38 +21,34 @@ function setup() {
   serial.open(portName); // open a serial port
 
   createCanvas(1024, 728);
-  // background(11, 87, 255);
-  background(53, 138, 255);
+  background(11, 87, 255);
   h1 = createElement('h1', 'Voltage Generated from Solar Cell')
 }
 
 function draw() {
   h1.position(40, 20);
-  graphData(solarRead);
+  // graphData(inData);
 
   ////////// controlling pages with switches /////////////
-  // console.log("button 1:", button1);
-  // console.log("button 2:", button2);
-  // console.log("button 3:", button3);
-  // console.log("button 4:", button4);
+  console.log("button 1:", button1);
+  console.log("button 2:", button2);
+  console.log("button 3:", button3);
+  console.log("button 4:", button4);
 
   if (button1 == 1) {
-    window.location.href = "index.html";
+    window.location.href = "../index.html";
   }
   if (button2 == 1) {
-    window.location.href = "/view/animate.html";
+    window.location.href = "animate.html";
   }
   if (button3 == 1) {
-    window.location.href = "/view/voltGen.html";
+    window.location.href = "voltGen.html";
   }
   if (button4 == 1) {
-    window.location.href = "/view/battery2.html";
+    window.location.href = "battery2.html";
   }
   if (rightBar == 1) {
-    window.location.href = "/view/battery.html";
-  }
-  if (leftBar == 1) {
-    window.location.href = "index.html";
+    window.location.href = "battery.html";
   }
 }
 
@@ -88,9 +82,6 @@ function serialEvent() {
     button2 = sensors[1];
     button3 = sensors[2];
     button4 = sensors[3];
-    rightBar = sensors[4];
-    leftBar = sensors[5];
-    solarRead = sensors[6];
     // rightBar = sensors[4]; //be sure to write the code in Arduino
   }
 }
@@ -105,7 +96,7 @@ function portClose() {
 
 function graphData(newData) {
   // map the range of the input to the window height:
-  var yPos = map(newData, 50, 255, 0, height);
+  var yPos = map(newData, 120, 255, 0, height);
 
   ////////////////DRAW LINE/////////////////
   // draw the line in a pretty color:
@@ -124,8 +115,7 @@ function graphData(newData) {
   if (xPos >= width) {
     xPos = 0;
     // clear the screen by resetting the background:
-    // background(11, 87, 255);
-    background(53, 138, 255);
+    background(11, 87, 255);
   } else {
     // increment the horizontal position for the next reading:
     xPos = xPos + 2;

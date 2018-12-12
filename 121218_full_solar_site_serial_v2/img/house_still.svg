@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1024px" height="345px" viewBox="0 0 1024 345" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tablet-Copy-4" transform="translate(0.000000, -514.000000)">
+            <g id="Group-2" transform="translate(-1.000000, 515.000000)">
+                <g id="Group">
+                    <path d="M0.5,278.5 L1036.8262,278.5" id="Line" stroke="#000000" stroke-width="2.5" stroke-linecap="square"></path>
+                    <polygon id="Fill-1" fill="#0B57FF" points="486.8175 92.5721 326.7685 156.6041 374.9715 71.5431 527.8005 0.4101"></polygon>
+                    <polygon id="Stroke-2" stroke="#000000" stroke-width="3" stroke-linejoin="bevel" points="486.8175 92.5721 326.7685 156.6041 374.9715 71.5431 527.8005 0.4101"></polygon>
+                    <polygon id="Fill-4" fill="#0B57FF" points="486.8175 92.5721 670.3485 155.3501 699.2155 62.7661 527.8005 0.4101"></polygon>
+                    <polygon id="Stroke-5" stroke="#000000" stroke-width="3" stroke-linejoin="bevel" points="486.8175 92.5721 670.3485 155.3501 699.2155 62.7661 527.8005 0.4101"></polygon>
+                    <polygon id="Fill-7" fill="#FFBDF6" points="670.3489 155.6989 670.3489 342.7279 699.2159 279.2639 699.2159 62.7669"></polygon>
+                    <polygon id="Stroke-8" stroke="#000000" stroke-width="3" stroke-linejoin="bevel" points="699.216 279.2644 670.349 342.7284 670.349 155.6994 699.216 62.7664"></polygon>
+                    <polygon id="Fill-10" fill="#FFFFFF" points="670.0802 154.9812 670.0802 342.0452 326.5002 342.0452 326.5002 156.6042 486.5492 92.5722"></polygon>
+                    <polygon id="Stroke-11" stroke="#000000" stroke-width="3" stroke-linejoin="bevel" points="670.0802 154.9812 670.0802 342.0452 326.5002 342.0452 326.5002 156.6042 486.5492 92.5722"></polygon>
+                    <polygon id="Fill-13" fill="#FFFF00" points="388.291 271.728 461.248 271.728 461.248 198.771 388.291 198.771"></polygon>
+                    <polygon id="Stroke-14" stroke="#000000" stroke-width="3" stroke-linejoin="bevel" points="388.291 271.728 461.248 271.728 461.248 198.771 388.291 198.771"></polygon>
+                    <polygon id="Fill-15" fill="#FFFF00" points="535.332 271.728 608.289 271.728 608.289 198.771 535.332 198.771"></polygon>
+                    <polygon id="Stroke-16" stroke="#000000" stroke-width="3" stroke-linejoin="bevel" points="535.332 271.728 608.289 271.728 608.289 198.771 535.332 198.771"></polygon>
+                    <path d="M689.3586,92.6892 L515.8086,28.2672" id="Stroke-17" stroke="#000000" stroke-width="3" stroke-linejoin="bevel"></path>
+                    <path d="M678.798,124.3719 L502.079,58.8939" id="Stroke-18" stroke="#000000" stroke-width="3" stroke-linejoin="bevel"></path>
+                    <g id="Group-21" transform="translate(575.000000, 30.546000)">
+                        <path d="M37.5353,0.9284 L0.5293,92.3004" id="Fill-19" fill="#0B57FF"></path>
+                        <path d="M37.5353,0.9284 L0.5293,92.3004" id="Stroke-20" stroke="#000000" stroke-width="3" stroke-linejoin="bevel"></path>
+                    </g>
+                    <g id="Group-24" transform="translate(407.000000, 36.546000)">
+                        <path d="M0.0314,87.6716 L42.2744,0.5226" id="Fill-22" fill="#0B57FF"></path>
+                        <path d="M0.0314,87.6716 L42.2744,0.5226" id="Stroke-23" stroke="#000000" stroke-width="3" stroke-linejoin="bevel"></path>
+                    </g>
+                    <g id="Group-27" transform="translate(342.000000, 58.546000)">
+                        <path d="M0.2579,70.7536 L160.0789,0.3486" id="Fill-25" fill="#FFFFFF"></path>
+                        <path d="M0.2579,70.7536 L160.0789,0.3486" id="Stroke-26" stroke="#000000" stroke-width="3" stroke-linejoin="bevel"></path>
+                    </g>
+                    <g id="Group-30" transform="translate(359.000000, 27.546000)">
+                        <path d="M0.8595,70.7751 L156.4565,0.3701" id="Fill-28" fill="#FFFFFF"></path>
+                        <path d="M0.8595,70.7751 L156.4565,0.3701" id="Stroke-29" stroke="#000000" stroke-width="3" stroke-linejoin="bevel"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -26,12 +26,10 @@ let button2;
 let button3;
 let button4;
 let rightBar;
-let leftBar;
-let solarRead;
 
 function setup() {
   /////////////////serial communication code/////////////////////
-  serial = new p5.SerialPort("10.17.61.21");
+  serial = new p5.SerialPort();
   serial.on('list', printList);
   serial.on('connected', serverConnected); // callback for connecting to the server
   serial.on('open', portOpen); // callback for the port opening
@@ -76,8 +74,8 @@ function setup() {
   cell = new Cell(0, 0);
   sun = new Sun(0, 0);
 
-  // slider = createSlider(1, 13, 3);
-  // slider.position(700, 50);
+  slider = createSlider(1, 13, 3);
+  slider.position(700, 50);
 
   h1 = createElement('h1', 'Solar Cell Diagram');
 }
@@ -96,19 +94,17 @@ function windowResized() {
 function draw() {
   background(255, 255, 0);
   h1.position(40, 20);
-  // let sliderPhoton = slider.value();
-  let sliderPhoton = map(solarRead,60,255,1,13);
+  let sliderPhoton = slider.value();
   cell.show();
 
   // This is the function that goes through the whole loop of photon, e-h gen, tweening and circuit
 
-  if (millis() - loopTimer > 7000) {
+  if (millis() - loopTimer > 10000) {
     loopTimer = millis()
 
     for (let l = 0; l < sliderPhoton; l++) {
-      // let rndPh = floor(random(13));
-      // photons.push(new Loop(phStopX[rndPh], phStopY[rndPh], phStartX, phStartY[rndPh]));
-      photons.push(new Loop(phStopX[l], phStopY[l], phStartX, phStartY[l]));
+      let rndPh = floor(random(13));
+      photons.push(new Loop(phStopX[rndPh], phStopY[rndPh], phStartX, phStartY[rndPh]));
     }
   }
   for (num of photons) {
@@ -121,28 +117,25 @@ function draw() {
   sun.show()
 
   ////////// controlling pages with switches /////////////
-  // console.log("button 1:", button1);
-  // console.log("button 2:", button2);
-  // console.log("button 3:", button3);
-  // console.log("button 4:", button4);
+  console.log("button 1:", button1);
+  console.log("button 2:", button2);
+  console.log("button 3:", button3);
+  console.log("button 4:", button4);
 
   if (button1 == 1) {
-    window.location.href = "index.html";
+    window.location.href = "../index.html";
   }
   if (button2 == 1) {
-    window.location.href = "/view/animate.html";
+    window.location.href = "animate.html";
   }
   if (button3 == 1) {
-    window.location.href = "/view/voltGen.html";
+    window.location.href = "voltGen.html";
   }
   if (button4 == 1) {
-    window.location.href = "/view/battery2.html";
+    window.location.href = "battery2.html";
   }
   if (rightBar == 1) {
-    window.location.href = "/view/battery.html";
-  }
-  if (leftBar == 1) {
-    window.location.href = "index.html";
+    window.location.href = "battery.html";
   }
 }
 
@@ -182,9 +175,6 @@ function serialEvent() {
     button2 = sensors[1];
     button3 = sensors[2];
     button4 = sensors[3];
-    rightBar = sensors[4];
-    leftBar = sensors[5];
-    solarRead = sensors[6];
     // rightBar = sensors[4]; //be sure to write the code in Arduino
   }
 }

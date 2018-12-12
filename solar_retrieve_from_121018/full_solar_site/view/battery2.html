@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="../js/p5.min.js"></script>
+  <script src="../js/p5.dom.min.js"></script>
+  <script src="../js/p5.sound.min.js"></script>
+  <script src="../battery.js"></script>
+  <link rel="stylesheet" type="text/css" href="../style/batteryStyle.css">
+  <script language="javascript" type="text/javascript" src="../js/libraries/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="../js/p5.serialport.js"></script>
+  <meta charset="utf-8">
+</head>
+
+<style>
+  @font-face {
+    font-family: "foundersGroteskSemi";
+    src: url("../fonts/FoundersGrotesk-Semibold.otf");
+  }
+
+  @font-face {
+    font-family: "basisGrotesqueMono";
+    src: url("../fonts/basis_grotesque_pro_mono.otf");
+  }
+
+  foundersGroteskSemi {
+    font-family: "../foundersGroteskSemi";
+  }
+
+  basisGrotesqueMono {
+    font-family: "../basisGrotesqueMono";
+  }
+</style>
+
+<body>
+  <!-- BATTERY ICON -->
+  <div id="battery-icon">
+    <img src="../img/batteryIcon_white.svg" alt="battery icon">
+  </div>
+
+  <!-- CHALLENGES -->
+  <div id="challenges">
+    <p class="maintext">Currently there are challenges with these household batteries that make it hard for widespread use. Here are some of the main reasons why more buildings do not implement solar panels:</p>
+
+    <!-- READ MORE FOOTER -->
+    <!-- <div>
+      <div id ="scrollWin()">
+        <a href>Read More</a> <img src="img/readMoreArrow_small.svg" alt="read more down arrow">
+      </div>
+    </div> -->
+
+    <!-- Scroll to Position-->
+    <!-- <script>
+    function scrollWin() {
+        window.scrollTo(0, 900);
+    }
+    </script> -->
+
+
+    <!-- 1. COST -->
+    <div class="hr">
+      <hr>
+    </div>
+
+    <div id="Reason">
+      <p class="reasontext">1. Cost</p>
+      <p class="explanationtext">It is expensive, therefore not many households can afford to purchase their own battery bank. Most houses send and retrieve their excess or deficient energy from the power grid. This is not ideal because the grid
+        does not store energy, it only redistributes it. Also, the power grid runs on fossil fuels.</p>
+    </div>
+
+    <!-- 2. Capacity -->
+    <div class="hr">
+      <hr>
+    </div>
+
+    <div id="Reason">
+      <p class="reasontext">2. Size</p>
+      <p class="explanationtext">It is expensive, therefore not many households can afford to purchase their own battery bank. Most houses send and retrieve their excess or deficient energy from the power grid. This is not ideal because the grid
+        does not store energy, it only redistributes it. Also, the power grid runs on fossil fuels.</p>
+    </div>
+
+    <!-- 2. Capacity -->
+    <div class="hr">
+      <hr>
+    </div>
+
+    <div id="Size">
+      <p class="reasontext">3. Size</p>
+      <p class="explanationtext">It is expensive, therefore not many households can afford to purchase their own battery bank. Most houses send and retrieve their excess or deficient energy from the power grid. This is not ideal because the grid
+        does not store energy, it only redistributes it. Also, the power grid runs on fossil fuels.</p>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
