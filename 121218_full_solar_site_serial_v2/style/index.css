@@ -8,14 +8,11 @@ canvas {
 }
 
 #intro {
-  padding-top: 20px;
+  padding-top: 10px;
   position: relative;
   display: inline-block;
   color: black;
   text-align: center;
-  /* font-size:36px;
-  font-family: 'foundersGroteskSemi', sans-serif;
-  line-height: 1.15; */
 }
 
 #headline{
@@ -38,10 +35,11 @@ ul {
   float: left;
 }
 
-#cta {
+p {
   position:relative;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 10px;
   width: 50%;
   font-size: 21px;
   font-family: 'basisGrotesqueMono', monospace;
