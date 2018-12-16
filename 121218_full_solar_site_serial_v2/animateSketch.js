@@ -132,7 +132,7 @@ function draw() {
   // if (button2 == 1) {
   //   window.location.href = "animate.html";
   // }
-  if (button3 == 1) {
+  if (button2 == 1) {
     window.location.href = "voltGen.html";
   }
   if (button4 == 1) {

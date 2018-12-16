@@ -40,7 +40,7 @@ function draw() {
   if (button1 == 1) {
     window.location.href = "../index.html";
   }
-  if (button2 == 1) {
+  if (button3 == 1) {
     window.location.href = "animate.html";
   }
   // if (button3 == 1) {

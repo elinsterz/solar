@@ -59,10 +59,10 @@ function draw() {
   //   window.location.href="index.html";
   // }
   if (button2 == 1) {
-    window.location.href="view/animate.html";
+    window.location.href="view/voltGen.html";
   }
   if (button3 == 1) {
-    window.location.href="view/voltGen.html";
+    window.location.href="view/animate.html";
   }
   if (button4 == 1) {
     window.location.href="view/battery2.html";
