@@ -26,7 +26,7 @@ function setup() {
   clear();
 
   // serial communictaion codes
-  serial = new p5.SerialPort("10.17.61.21");
+  serial = new p5.SerialPort("10.17.118.184");
   serial.on('list', printList);
   serial.on('connected', serverConnected); // callback for connecting to the server
   serial.on('open', portOpen); // callback for the port opening
