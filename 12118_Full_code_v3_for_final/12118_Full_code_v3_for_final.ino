@@ -165,7 +165,7 @@ if (leftSW > 600){
 //        solarSmooth = solarTotal / numReadings;
 //
 //       int mapSolar = map (solarSmooth, 300, 1023, 1, 255);   
-       int mapSolar = map (solarAvg, 300, 1023, 1, 255);   
+       int mapSolar = map (solarAvg, 600, 1023, 1, 255);   
 
 //       Serial.print(mapSolar); // binary sent to the computer
         Serial.print(mapSolar);
@@ -179,11 +179,11 @@ if (leftSW > 600){
 
 
     // Here you can add more lines for each condition in order to light up more LEDs in the house.
-        if (solarAvg < 650) {
+        if (solarAvg < 700) {
         analogWrite(houseLED1, 0);
          analogWrite(houseLED2, 0);}
         
-        if (solarAvg >= 600 && solarAvg < 780) {
+        if (solarAvg >= 700 && solarAvg < 780) {
         analogWrite(houseLED1, 50);
         analogWrite(houseLED2, 50);}
     
