@@ -11,6 +11,7 @@ let button2;
 let button3;
 let button4;
 let rightBar;
+let leftBar;
 
 function centerCanvas() {
   let x = (windowWidth - width) / 2;
@@ -44,27 +45,31 @@ function windowResized() {
 
 
 function draw() {
-  ////////// controlling pages with switches /////////////
-  // console.log("button 1:", button1);
-  // console.log("button 2:",button2);
-  // console.log("button 3:",button3);
-  // console.log("button 4:",button4);
+  fill(0);
+  strokeWeight(2.5);
+  line(0,795, width,795);
 
-  if (button1 == 1) {
-    window.location.href="../index.html";
-  }
+  ////////// controlling pages with switches /////////////
+  console.log("button 1:", button1);
+  console.log("button 2:",button2);
+  console.log("button 3:",button3);
+  console.log("button 4:",button4);
+
+  // if (button1 == 1) {
+  //   window.location.href="index.html";
+  // }
   if (button2 == 1) {
-    window.location.href="voltGen.html";
+    window.location.href="view/voltGen.html";
   }
   if (button3 == 1) {
-    window.location.href="animate.html";
+    window.location.href="view/animate.html";
   }
-  // if (button4 == 1) {
-  //   window.location.href="battery2.html";
-  // }
-  // if (rightBar  >= 700) {
-  //   window.location.href="battery.html";
-  // }
+  if (button4 == 1) {
+    window.location.href="view/battery2.html";
+  }
+  if (rightBar  >= 700) {
+    window.location.href="view/battery.html";
+  }
 }
 
 // get the list of ports:
@@ -105,6 +110,5 @@ function serialEvent() {
     button4 = sensors[3];
     leftBar = sensors[5];
     rightBar = sensors[4];
-    // rightBar = sensors[4]; //be sure to write the code in Arduino
   }
 }

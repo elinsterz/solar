@@ -59,12 +59,14 @@ function draw() {
   if (button3 == 1) {
     window.location.href="animate.html";
   }
+
+
   // if (button4 == 1) {
   //   window.location.href="battery2.html";
   // }
-  // if (rightBar  >= 700) {
-  //   window.location.href="battery.html";
-  // }
+  if (rightBar  >= 700) {
+    window.location.href="battery.html";
+  }
 }
 
 // get the list of ports:

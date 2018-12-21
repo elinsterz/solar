@@ -8,7 +8,7 @@ canvas {
 }
 
 #intro {
-  padding-top: 20px;
+  padding-top: 25px;
   position: relative;
   display: inline-block;
   color: black;
@@ -17,11 +17,11 @@ canvas {
 
 #headline{
   font-family: 'foundersGroteskSemi', sans-serif;
-  font-size:56px;
   position:relative;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  font-size:48px;
 }
 
 ul {
@@ -33,15 +33,4 @@ ul {
 #nav {
   display: inline-block;
   float: left;
-}
-
-p {
-  position:relative;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 10px;
-  width: 50%;
-  font-size: 21px;
-  font-family: 'basisGrotesqueMono', monospace;
-  color: black;
 }

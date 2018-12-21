@@ -59,6 +59,11 @@ function draw() {
   if (button3 == 1) {
     window.location.href="animate.html";
   }
+  //switch to voltGen page after handle is lifted from right switch
+  if (rightBar  <= 400) {
+    window.location.href="voltGen.html";
+  }
+
   // if (button4 == 1) {
   //   window.location.href="battery2.html";
   // }

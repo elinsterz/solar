@@ -97,12 +97,16 @@ function draw() {
   background(255, 255, 0);
   h1.position(40, 20);
   // let sliderPhoton = slider.value();
-  let sliderPhoton = map(solarRead,60,255,1,13);
+  let sliderPhoton = map(solarRead,150,255,1,13);
   cell.show();
+  console.log(solarRead);
+
+// need to add a function set in the beginning so that when the page opens we
+// do not wait too long for the first group of photons to arrive.
 
   // This is the function that goes through the whole loop of photon, e-h gen, tweening and circuit
 
-  if (millis() - loopTimer > 5000) {
+  if (millis() - loopTimer > 7000) {
     loopTimer = millis()
 
     for (let l = 0; l < sliderPhoton; l++) {

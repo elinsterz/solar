@@ -1,0 +1,109 @@
+html, body {
+  font-family: 'foundersGroteskSemi', sans-serif;
+  padding: 48px;
+  margin: 0;
+  background-color: black;
+}
+
+canvas {
+  display: block;
+}
+
+.nav {
+  padding-top: 150px;
+  padding-left: 150px;
+  margin: 150px;
+  display: block;
+}
+
+.maintext {
+  position: relative;
+  display: inline-block;
+  color: white;
+  font-size: 48px;
+  font-family: 'foundersGroteskSemi', sans-serif;
+  line-height: 1.15;
+  letter-spacing: 1px;
+  padding-top: 40px;
+}
+
+.secondarytext {
+  position: relative;
+  display: inline-block;
+  color: white;
+  font-size: 21px;
+  font-family: 'basisGrotesqueMono', monospace;
+  letter-spacing: 1px;
+  padding-top: 40px;
+}
+
+a{
+  padding-top: 25px;
+  color: white;
+  font-family: 'basisGrotesqueMono', monospace;
+  text-decoration: none;
+}
+
+#readmore{
+  color: white;
+  font-size: 21px;
+  font-family: 'basisGrotesqueMono', sans-serif;
+}
+
+.hr {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.reasontext {
+  position: relative;
+  display: inline-block;
+  color: white;
+  font-size: 48px;
+  font-family: 'foundersGroteskSemi', sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 1.25;
+}
+
+.explanationtext {
+  position: relative;
+  display: inline-block;
+  /* float:right; */
+  /* width: 600px; */
+  color: white;
+  font-size: 21px;
+  font-family: 'basisGrotesqueMono', sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+
+#downArrow {
+  display: inline-block;
+  padding-left: 25px;
+}
+
+#intro {
+  padding-top: 5px;
+  position: relative;
+  display: inline-block;
+  color: black;
+  text-align: center;
+}
+
+#headline{
+  color: white;
+  font-size: 48px;
+  font-family: 'foundersGroteskSemi', sans-serif;
+  position:relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  /* width: 50%; */
+  font-size:48px;
+}
+
+#img{
+
+}
